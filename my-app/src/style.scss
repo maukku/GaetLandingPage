@@ -1,0 +1,36 @@
+$gold: #dd9700;
+$primary-color: #000000;
+$secondary-color: #efeaec;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: #dd9700;
+  padding: 10px;
+}
+
+.Header {
+  background-color: #000000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .Subpages {
+    justify-self: end;
+    color: $secondary-color;
+    li {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: $secondary-color;
+}
