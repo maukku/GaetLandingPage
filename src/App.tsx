@@ -1,20 +1,13 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Header from "./components/Header";
 import Main from "./components/Main";
-
-
-
-
-
+import FeaturesCarousel from "./components/FeaturesCarousel";
 
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-        <Main />
-      </header>
+      <Main />
+      <FeaturesCarousel />
     </div>
   );
 }
