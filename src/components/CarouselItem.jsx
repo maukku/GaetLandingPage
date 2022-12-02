@@ -1,27 +1,29 @@
-import React from "react";
 import styled from "styled-components";
-import Img from "../assets/screenshot.png";
 const Item = styled.img`
   src: ${(props) => props.src};
-  // max-width: 200px;
   max-height: 350px;
 `;
 
 const Text = styled.div`
-  margin-top: 15px;
   width: fit-content;
   text-align: center;
+`;
+const Title = styled.div`
+  margin: 15px;
 `;
 
 const Container = styled.div`
   display: grid;
   justify-items: center;
   padding: 20px;
+;
+ margin-block: 100px;
 `;
-export const CarouselItem = ({ text, src }) => {
+export const CarouselItem = ({ text, src, title }) => {
   return (
     <Container>
-      <Item src={Img} />
+      <Item src={src} />
+      <Title>{title}</Title>
       <Text>{text}</Text>
     </Container>
   );

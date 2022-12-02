@@ -37,7 +37,11 @@ const Logo = styled.div`
   padding: 20px;
   font-size: 50px;
   height: fit-content;
-  cursor: pointer;
+`;
+ const SmallLogo = styled(Logo)`
+  font-size: 30px;
+  height:auto;
+  width: fit-content;
 `;
 
 function Main() {
@@ -56,4 +60,4 @@ function Main() {
   );
 }
 
-export default Main;
+export  { Main, SmallLogo };
