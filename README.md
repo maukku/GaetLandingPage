@@ -1,1 +1,1 @@
-Gae tLanding Page
+Gaet Landing Page
